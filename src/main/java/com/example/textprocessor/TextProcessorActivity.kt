@@ -1,8 +1,8 @@
-package your.package
+package com.example.textprocessor
 
 import android.app.Activity
 import android.os.Bundle
-import com.example.kotlin_text_screen.R
+import com.example.textprocessor.R
 
 class TextProcessorActivity : Activity() {
 

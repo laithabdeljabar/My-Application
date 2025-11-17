@@ -1,21 +1,25 @@
 plugins {
-    id 'com.android.library'
-    id 'org.jetbrains.kotlin.android'
+    id 'com.android.library' version '8.12.3'
+    id 'org.jetbrains.kotlin.android' version '2.0.21'
+}
+
+android {
+    namespace = "com.example.textprocessor"
+    compileSdk = 34
+
+    defaultConfig {
+        minSdk = 21
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
 }
 
 group = "com.github.laithabdeljabar"
 version = "1.0.0"
-
-android {
-    namespace "com.example.kotlin_text_screen"
-    compileSdk 34
-
-    defaultConfig {
-        minSdk 21
-    }
-}
-
-dependencies {
-    // your dependencies
-}
-
