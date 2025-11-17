@@ -6,27 +6,56 @@
     android:padding="16dp"
     android:background="#FF0000">
 
-    <!-- Placeholder UI for the text processor screen -->
     <TextView
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Text Processor"
         android:textSize="24sp"
+        android:textColor="#FFFFFF"
         android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp">
+        <TextView
+            android:id="@+id/textViewRetrievedData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retrieved Data:\n(No data found)"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="#88000000"
+            android:padding="12dp" />
+    </ScrollView>
 
     <EditText
         android:id="@+id/editTextInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter text here" />
+        android:hint="Enter text here"
+        android:textColor="#000000"
+        android:textColorHint="#666666"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
 
     <Button
-        android:id="@+id/buttonProcess"
-        android:layout_width="wrap_content"
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Process Text"
-        android:layout_marginTop="16dp" />
+        android:text="Save & Return Data"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/buttonRetrieve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retrieve Data"
+        android:textSize="16sp" />
 
 </LinearLayout>
 
