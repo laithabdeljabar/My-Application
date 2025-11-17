@@ -3,6 +3,9 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+group = "com.github.laithabdeljabar"
+version = "1.0.0"
+
 android {
     namespace "com.example.kotlin_text_screen"
     compileSdk 34
@@ -15,5 +18,4 @@ android {
 dependencies {
     // your dependencies
 }
-
 
